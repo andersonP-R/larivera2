@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const AboutSectionOne = styled.div`
   display: flex;
   width: 90%;
+  height: 600px;
   margin: 0px auto;
   margin-bottom: 50px;
 
   .imageContainer {
     display: flex;
-    /* border: 1px solid red; */
     width: 50%;
     img {
       width: 100%;
@@ -45,8 +45,10 @@ export const AboutSectionOne = styled.div`
     }
   }
 
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 960px) {
+    height: 700px;
     .descriptionContainer {
+      overflow: scroll;
       div {
         svg {
           width: 100px;
@@ -73,6 +75,7 @@ export const AboutSectionOne = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 1000px;
     margin-bottom: 20px;
 
     .imageContainer {

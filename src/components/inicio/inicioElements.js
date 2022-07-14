@@ -4,6 +4,7 @@ export const ContainerInicio = styled.div`
   margin: 0px auto;
 `;
 
+// main banner styles
 export const ImgContainer = styled.section`
   margin-bottom: 70px;
 
@@ -49,6 +50,7 @@ export const ImgContainer = styled.section`
 export const SectionOne = styled.section`
   display: flex;
   width: 90%;
+  height: 210px;
   margin: 0px auto;
   margin-bottom: 60px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -74,6 +76,7 @@ export const SectionOne = styled.section`
 
   @media screen and (max-width: 760px) {
     width: 60%;
+    height: 650px;
     margin-bottom: 0px;
     div {
       flex-direction: column;
@@ -83,7 +86,12 @@ export const SectionOne = styled.section`
     }
   }
 
+  @media screen and (max-width: 550px) {
+    height: 800px;
+  }
+
   @media screen and (max-width: 460px) {
+    height: 630px;
     width: 100%;
   }
 `;
@@ -126,9 +134,10 @@ export const SectionThree = styled.section`
 
   @media screen and (max-width: 812px) {
     flex-direction: column;
-    height: auto;
+    height: 520px;
     align-items: center;
     border-radius: 0px;
+
     div {
       width: 100%;
       p {
@@ -147,8 +156,8 @@ export const SectionThree = styled.section`
     }
   }
 
-  @media screen and (max-width: 460px) {
-    margin-bottom: 50px;
+  @media screen and (max-width: 500px) {
+    height: 400px;
     div {
       p {
         margin: 10px 10px 30px 10px;
@@ -197,7 +206,7 @@ export const SectionFour = styled.section`
 
   @media screen and (max-width: 812px) {
     flex-direction: column-reverse;
-    height: auto;
+    height: 520px;
     align-items: center;
     border-radius: 0px;
     div {
@@ -219,7 +228,8 @@ export const SectionFour = styled.section`
     }
   }
 
-  @media screen and (max-width: 460px) {
+  @media screen and (max-width: 500px) {
+    height: 400px;
     div {
       p {
         margin: 10px 10px 30px 10px;
