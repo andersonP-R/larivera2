@@ -13,7 +13,6 @@ export const Router = () => {
     <BrowserRouter>
       <ScrollToTop />
       <NavBar />
-
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/inicio" element={<Inicio />} />

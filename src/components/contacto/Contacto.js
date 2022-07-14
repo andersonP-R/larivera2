@@ -1,23 +1,17 @@
 import React from "react";
 import "./contacto.css";
 import tasa from "../../images/tasa-caffe-2.jpg";
-import { ImgContainer } from "../inicio/inicioElements";
+import { MainBanner } from "../Layout/MainBanner";
+import { bannerDescripContacto } from "../../data/contactoData";
 
 export const Contacto = () => {
   return (
     <>
-      <ImgContainer>
-        <div>
-          <img src={tasa} alt="banner-2" />
-        </div>
-        <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English.
-        </p>
-      </ImgContainer>
+      <MainBanner
+        img={tasa}
+        alt="banner-café-2"
+        descrip={bannerDescripContacto}
+      />
       <div className="contacto">
         <div className="mapa">
           <p>Puedes localizarnos en</p>

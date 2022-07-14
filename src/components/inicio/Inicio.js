@@ -1,44 +1,44 @@
 import React from "react";
 import {
   ContainerInicio,
-  ImgContainer,
   SectionFive,
-  SectionFour,
   SectionOne,
-  SectionThree,
   SectionTwo,
 } from "./inicioElements";
 
 import { LaRiveraLink } from "../Layout/footer/footerElements";
 
-import finca_1 from "../../images/finca-1.jpg";
-import tasa from "../../images/tasa-caffe-2.jpg";
+import Tasa from "../../images/cafe-gif.gif";
+import { MainBanner } from "../Layout/MainBanner";
+import { bannerDescripInicio } from "../../data/inicioData";
+
 import { FaEnvira, FaSolarPanel, FaTractor } from "react-icons/fa";
 import { IconContext } from "react-icons";
+
+import { motion } from "framer-motion";
+import { sectionOne } from "../variantsAnimation";
+import { useScroll } from "../useScroll";
 
 // parallax effect
 import "./parallaxEffect.css";
 
+import { SectionThreeComponet } from "./SectionThreeComponet";
+import { SectionFourComponent } from "./SectionFourComponent";
+
 export const Inicio = () => {
+  const [element, controls] = useScroll();
   return (
     <ContainerInicio>
-      <ImgContainer>
-        <div>
-          <img src={finca_1} alt="finca" />
-        </div>
-        <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English.
-        </p>
-      </ImgContainer>
-      <SectionOne>
+      <MainBanner img={Tasa} alt="Tasa-café" descrip={bannerDescripInicio} />
+      <SectionOne ref={element}>
         <IconContext.Provider
           value={{ style: { fontSize: "4.2em", color: "#0e4a67" } }}
         >
-          <div>
+          <motion.div
+            animate={controls}
+            variants={sectionOne}
+            transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+          >
             <div>
               <FaEnvira />
               <p>
@@ -63,7 +63,7 @@ export const Inicio = () => {
                 text ever since the ype specimen book.
               </p>
             </div>
-          </div>
+          </motion.div>
         </IconContext.Provider>
       </SectionOne>
       <SectionTwo>
@@ -75,32 +75,8 @@ export const Inicio = () => {
           </div>
         </div>
       </SectionTwo>
-      <SectionThree>
-        <div>
-          <p>
-            orem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type in
-          </p>
-        </div>
-        <div>
-          <img src={tasa} alt="cafe" />
-        </div>
-      </SectionThree>
-      <SectionFour>
-        <div>
-          <img src={tasa} alt="cafe" />
-        </div>
-        <div>
-          <p>
-            orem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make
-          </p>
-        </div>
-      </SectionFour>
+      <SectionThreeComponet />
+      <SectionFourComponent />
       <SectionFive>
         <div className="subSectionFive">
           <div className="subSectionFiveContainer">

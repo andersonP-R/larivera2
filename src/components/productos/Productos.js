@@ -1,30 +1,23 @@
 import React from "react";
-import { ImgContainer } from "../inicio/inicioElements";
 
 import banner_2 from "../../images/cafe-banner2.jpg";
-import { products } from "../../data/productos";
+import { bannerDescripProductos, products } from "../../data/productosData";
 import {
   Item,
   Items,
   DescriptionItemContainer,
   ContainerItems,
 } from "./productsElements";
+import { MainBanner } from "../Layout/MainBanner";
 
 export const Productos = () => {
   return (
     <div>
-      <ImgContainer>
-        <div>
-          <img src={banner_2} alt="banner-2" />
-        </div>
-        <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English.
-        </p>
-      </ImgContainer>
+      <MainBanner
+        img={banner_2}
+        alt="banner-café"
+        descrip={bannerDescripProductos}
+      />
 
       <ContainerItems>
         {products.map((product) => {

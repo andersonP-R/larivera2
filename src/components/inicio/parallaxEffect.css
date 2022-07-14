@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    background: top fixed url(../../images/cafe-gif.gif);
+    background: top fixed url(../../images/finca-1.jpg);
     background-size: cover;
     opacity: 0.9;
     color: white;
@@ -50,7 +50,6 @@
     color: white;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-radius: 5px;
 }
 
 .subSectionFiveContainer{
@@ -91,7 +90,6 @@
     color: white;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-radius: 5px;
 }
 
 .subSectionFiveContainer__2{

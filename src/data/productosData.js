@@ -18,3 +18,7 @@ export const products = [
     image: "https://via.placeholder.com/400x300",
   },
 ];
+
+export const bannerDescripProductos = `Suspendisse tempus sollicitudin sapien, a fermentum tortor mollis aliquam. 
+Curabitur laoreet a tortor ac euismod. Pellentesque lacus lorem, ornare eget porttitor ac, dictum in quam. Mauris 
+at sapien posuere, rhoncus urna vel, volutpat lectus. Mauris pretium tellus in justo mollis, at aliquet odio molestie.`;

@@ -11,7 +11,7 @@ export const ImgContainer = styled.section`
     width: 100%;
     height: 400px;
     margin-bottom: 50px;
-    border-radius: 0px 0px 120px 10px;
+    border-radius: 0px 0px 120px 0px;
     overflow: hidden;
 
     img {
@@ -169,6 +169,7 @@ export const SectionFour = styled.section`
   display: flex;
   margin: 0px 40px 60px 40px;
   height: 350px;
+  border-radius: 0px 0px 0px 100px;
   overflow: hidden;
 
   div {
