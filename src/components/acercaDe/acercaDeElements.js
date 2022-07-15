@@ -96,4 +96,8 @@ export const AboutSectionOne = styled.div`
   }
 `;
 
-export const AboutSectionTwo = styled.div``;
+export const AboutSectionTwo = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: auto;
+`;

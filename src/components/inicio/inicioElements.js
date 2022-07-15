@@ -93,6 +93,7 @@ export const SectionOne = styled.section`
   @media screen and (max-width: 460px) {
     height: 630px;
     width: 100%;
+    margin-bottom: 50px;
   }
 `;
 
@@ -100,6 +101,9 @@ export const SectionTwo = styled.section`
   border-radius: 120px 0px 0px 120px;
   overflow: hidden;
   margin-bottom: 60px;
+  @media screen and (max-width: 460px) {
+    border-radius: 0px;
+  }
 `;
 
 export const SectionThree = styled.section`

@@ -30,7 +30,7 @@ export const SectionOne = () => {
         className="descriptionContainer"
         animate={controls}
         variants={sectionOneAcercaVatiants}
-        transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+        transition={{ delay: 0.1, duration: 0.6, type: "tween" }}
       >
         {/* abstraer estos parrafos */}
         <div>
