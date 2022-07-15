@@ -32,7 +32,7 @@ export const ImgContainer = styled.section`
   }
 
   @media screen and (max-width: 760px) {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   @media screen and (max-width: 460px) {
@@ -50,9 +50,9 @@ export const ImgContainer = styled.section`
 export const SectionOne = styled.section`
   display: flex;
   width: 90%;
-  height: 210px;
   margin: 0px auto;
   margin-bottom: 60px;
+  margin-top: 60px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 

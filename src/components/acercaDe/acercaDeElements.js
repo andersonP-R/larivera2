@@ -2,17 +2,16 @@ import styled from "styled-components";
 
 export const AboutSectionOne = styled.div`
   display: flex;
-  width: 90%;
-  height: 600px;
-  margin: 0px auto;
+  /* revizar heigth */
+  height: auto;
+  margin: 0px 40px 0px 40px;
   margin-bottom: 50px;
+  overflow: hidden;
 
   .imageContainer {
-    display: flex;
-    width: 50%;
     img {
       width: 100%;
-      height: 100%;
+      height: 620px;
       object-fit: cover;
     }
   }
@@ -21,12 +20,10 @@ export const AboutSectionOne = styled.div`
     display: flex;
     flex-direction: column;
     width: 50%;
-    align-items: center;
     padding: 0px 10px 0px 10px;
 
     div {
       display: flex;
-      width: 100%;
       margin-bottom: 15px;
 
       p {
@@ -46,9 +43,7 @@ export const AboutSectionOne = styled.div`
   }
 
   @media screen and (max-width: 960px) {
-    height: 700px;
     .descriptionContainer {
-      overflow: scroll;
       div {
         svg {
           width: 100px;
@@ -57,15 +52,20 @@ export const AboutSectionOne = styled.div`
     }
   }
 
-  @media screen and (max-width: 635px) {
+  @media screen and (max-width: 785px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
     .descriptionContainer {
+      width: 90%;
       div {
         p {
-          font-size: 15px;
+          font-size: 20px;
         }
 
         svg {
-          width: 100px;
+          margin-top: 10px;
+          width: 50px;
         }
       }
     }
@@ -74,30 +74,30 @@ export const AboutSectionOne = styled.div`
   @media screen and (max-width: 395px) {
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 1000px;
-    margin-bottom: 20px;
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 40px;
 
     .imageContainer {
-      width: 90%;
       border: 10px solid #0e4a67;
       border-radius: 50%;
       img {
         width: 100%;
-        height: 100%;
+        height: 320px;
         object-fit: cover;
       }
     }
 
     .descriptionContainer {
-      width: 100%;
+      width: 95%;
       padding: 10px 20px 0px 20px;
+      div {
+        p {
+          font-size: 16px;
+        }
+      }
     }
   }
 `;
 
-export const AboutSectionTwo = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: auto;
-`;
+export const AboutSectionTwo = styled.div``;

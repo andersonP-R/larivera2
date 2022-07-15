@@ -23,9 +23,8 @@ export const Logo = styled(Link)`
   display: flex;
   align-items: center;
   font-size: 2.5rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-style: italic;
+  font-family: "monospace";
+  letter-spacing: 2px;
   text-decoration: none;
   color: white;
   text-shadow: 0px 2px 2px black;
