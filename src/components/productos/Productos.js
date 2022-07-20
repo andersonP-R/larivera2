@@ -1,6 +1,6 @@
 import React from "react";
 
-import banner_2 from "../../images/cafe-banner2.jpg";
+import finca1 from "../../images/finca-1.jpg";
 import { bannerDescripProductos, products } from "../../data/productosData";
 import {
   Item,
@@ -14,7 +14,7 @@ export const Productos = () => {
   return (
     <div>
       <MainBanner
-        img={banner_2}
+        img={finca1}
         alt="banner-café"
         descrip={bannerDescripProductos}
       />

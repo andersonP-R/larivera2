@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 export const Container = styled.div`
   width: 100%;
   height: 80px;
-  background: #0e4a67;
+  background-color: ${({ bgNav }) => (bgNav ? "#0e4a67e6" : "transparent")};
+  box-shadow: ${({ bgNav }) => (bgNav ? "0px 2px 1px gray" : "transparent")};
+  position: fixed;
+  z-index: 999;
+  transition: 0.3s ease;
 `;
 
 export const Wrapper = styled.div`
@@ -24,10 +28,10 @@ export const Logo = styled(Link)`
   align-items: center;
   font-size: 2.5rem;
   font-family: "monospace";
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-decoration: none;
   color: white;
-  text-shadow: 0px 2px 2px black;
+  z-index: 999;
   transition: 300ms ease;
 
   &:hover {
@@ -46,16 +50,17 @@ export const Menu = styled.ul`
   list-style: none;
 
   @media screen and (max-width: 960px) {
-    background: #0e4a67;
+    background: #0e4a67f2;
     position: absolute;
-    top: 80px;
+    /* top: 80px; */
     left: ${({ open }) => (open ? "0" : "-100%")};
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    transition: 0.5s all ease;
+
+    transition: 0.3s all ease;
   }
 `;
 
@@ -73,7 +78,7 @@ export const MenuItem = styled.li`
 
 export const MenuItemLink = styled(Link)`
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   height: 100%;
   padding: 0.5rem 2.5rem;
@@ -154,6 +159,7 @@ export const MenuItemLink = styled(Link)`
 export const MobileIcon = styled.div`
   display: none;
   margin-right: 1rem;
+  z-index: 999;
 
   @media screen and (max-width: 960px) {
     display: flex;

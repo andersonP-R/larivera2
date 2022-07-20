@@ -10,7 +10,7 @@ export const ScrollToTop = () => {
   };
 
   window.addEventListener("scroll", () => {
-    window.pageYOffset > 200 ? setScrollState(true) : setScrollState(false);
+    window.pageYOffset > 500 ? setScrollState(true) : setScrollState(false);
   });
 
   return (
@@ -21,15 +21,16 @@ export const ScrollToTop = () => {
 };
 
 const ToTop = styled.div`
-  display: ${({ scrollState }) => (scrollState ? "block" : "none")};
+  display: block;
   position: fixed;
   cursor: pointer;
   z-index: 10;
   bottom: 1rem;
-  right: 2rem;
+  right: ${({ scrollState }) => (scrollState ? "2rem" : "-3rem")};
   border-radius: 2rem;
   background-color: #0e4a67;
   padding: 0.5rem;
+  transition: 0.3s ease;
 
   svg {
     font-size: 1.6rem;

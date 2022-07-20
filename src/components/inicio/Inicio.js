@@ -8,7 +8,7 @@ import {
 
 import { LaRiveraLink } from "../Layout/footer/footerElements";
 
-import Tasa from "../../images/cafe-gif.gif";
+import Tasa3 from "../../images/tasa-caffe-3.jpg";
 import { MainBanner } from "../Layout/MainBanner";
 import { bannerDescripInicio } from "../../data/inicioData";
 
@@ -29,7 +29,7 @@ export const Inicio = () => {
   const [element, controls] = useScroll();
   return (
     <ContainerInicio>
-      <MainBanner img={Tasa} alt="Tasa-café" descrip={bannerDescripInicio} />
+      <MainBanner img={Tasa3} alt="Tasa-café" descrip={bannerDescripInicio} />
       <SectionOne ref={element}>
         <IconContext.Provider
           value={{ style: { fontSize: "4.2em", color: "#0e4a67" } }}

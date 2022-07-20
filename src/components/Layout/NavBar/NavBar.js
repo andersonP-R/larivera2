@@ -21,13 +21,21 @@ import { IconContext } from "react-icons";
 
 export const NavBar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [bgNav, setBgNav] = useState(false);
+
+  window.addEventListener("scroll", () => {
+    window.pageYOffset > 50 ? setBgNav(true) : setBgNav(false);
+  });
 
   return (
-    <Container>
+    <Container bgNav={bgNav}>
       <Wrapper>
         <IconContext.Provider value={{ style: { fontSize: "2em" } }}>
           <Logo to="/inicio">La Rivera</Logo>
-          <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
+          <MobileIcon
+            onClick={() => setShowMobileMenu(!showMobileMenu)}
+            open={showMobileMenu}
+          >
             {showMobileMenu ? <FaTimes /> : <FaBars />}
           </MobileIcon>
 

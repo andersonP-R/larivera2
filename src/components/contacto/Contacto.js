@@ -1,6 +1,6 @@
 import React from "react";
 import "./contacto.css";
-import tasa from "../../images/tasa-caffe-2.jpg";
+import tasa from "../../images/tasa-caffe.jpg";
 import { MainBanner } from "../Layout/MainBanner";
 import { bannerDescripContacto } from "../../data/contactoData";
 

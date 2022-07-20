@@ -10,7 +10,7 @@ export const ImgContainer = styled.section`
 
   div {
     width: 100%;
-    height: 400px;
+    height: 500px;
     margin-bottom: 50px;
     border-radius: 0px 0px 120px 0px;
     overflow: hidden;

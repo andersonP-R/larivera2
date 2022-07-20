@@ -7,7 +7,7 @@ import { ContainerInicio } from "../inicio/inicioElements";
 // styled-components
 import { AboutSectionTwo } from "./acercaDeElements";
 // images
-import agricultor from "../../images/agricultor-1.jpg";
+import cafeBanner from "../../images/cafe-banner.jpg";
 
 import { MainBanner } from "../Layout/MainBanner";
 import { bannerDescripAcercaDe } from "../../data/acercaDeData";
@@ -19,7 +19,7 @@ export const AcercaDe = () => {
   return (
     <ContainerInicio>
       <MainBanner
-        img={agricultor}
+        img={cafeBanner}
         alt="agricultor"
         descrip={bannerDescripAcercaDe}
       />
