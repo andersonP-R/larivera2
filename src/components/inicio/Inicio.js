@@ -83,6 +83,13 @@ export const Inicio = () => {
             <p>A description should be here</p>
 
             <LaRiveraLink to="/contacto">Ir a Contacto</LaRiveraLink>
+            <a
+              href="mailto:gamer1999r@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Say hi
+            </a>
           </div>
         </div>
       </SectionFive>

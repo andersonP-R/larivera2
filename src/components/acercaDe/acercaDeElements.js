@@ -75,7 +75,7 @@ export const AboutSectionOne = styled.div`
     flex-direction: column;
     align-items: center;
     margin: 0px;
-    height: 1020px;
+    height: auto;
     margin-bottom: 10px;
     margin-top: 40px;
 
